@@ -8,7 +8,27 @@ to be continued...
 
 Usage
 ----------------
-to be continued...
+Implement MessengerProperties interface
+
+*Example:*
+```java
+@Config.Sources("classpath:bridge.properties")
+public interface HueExampleConfiguration extends Config, HueConfiguration
+{
+    @Key("bridge.ip")
+    String getBridgeIp();
+
+    @Key("bridge.username")
+    String getBridgeUsername();
+}
+```
+
+Create instance of lights handler.
+
+*Example:*
+```java
+    private LightsHandler testee = new LightsHandler(new HueTestConfiguration());
+```
 
 Related
 ----------------
