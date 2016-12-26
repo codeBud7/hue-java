@@ -1,7 +1,7 @@
-package com.codebud7.http;
+package com.codebud7.service.http;
 
-import com.codebud7.domainobject.Light;
-import com.codebud7.domainobject.State;
+import com.codebud7.domainobject.lights.Light;
+import com.codebud7.domainobject.lights.State;
 import feign.Feign;
 import feign.Param;
 import feign.RequestLine;

@@ -1,9 +1,9 @@
 package com.codebud7.service;
 
 import com.codebud7.config.HueConfiguration;
-import com.codebud7.domainobject.Light;
-import com.codebud7.domainobject.State;
-import com.codebud7.http.LightsApiClient;
+import com.codebud7.domainobject.lights.Light;
+import com.codebud7.domainobject.lights.State;
+import com.codebud7.service.http.LightsApiClient;
 import java.util.List;
 import java.util.stream.Collectors;
 import org.slf4j.Logger;

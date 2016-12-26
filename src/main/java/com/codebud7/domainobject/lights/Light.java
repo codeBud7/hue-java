@@ -1,4 +1,4 @@
-package com.codebud7.domainobject;
+package com.codebud7.domainobject.lights;
 
 import lombok.Builder;
 import lombok.Getter;

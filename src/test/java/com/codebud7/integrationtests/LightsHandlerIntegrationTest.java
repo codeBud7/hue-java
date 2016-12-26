@@ -1,7 +1,7 @@
 package com.codebud7.integrationtests;
 
 import com.codebud7.config.HueTestConfiguration;
-import com.codebud7.domainobject.Light;
+import com.codebud7.domainobject.lights.Light;
 import com.codebud7.service.LightsHandler;
 import java.util.List;
 import org.junit.Test;
@@ -34,6 +34,6 @@ public class LightsHandlerIntegrationTest
     @Test
     public void shouldSetState() throws Exception
     {
-        testee.setState(2L, true);
+        testee.setState(2L, false);
     }
 }
