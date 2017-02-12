@@ -2,13 +2,10 @@ hue-java
 ==============================
 *A Java wrapper for the Philips Hue api.*
 
-Install
-----------------
-to be continued...
 
 Usage
 ----------------
-Implement MessengerProperties interface
+Implement HueConfiguration interface
 
 *Example:*
 ```java
@@ -30,10 +27,16 @@ Create instance of lights handler.
     private LightsHandler testee = new LightsHandler(new HueTestConfiguration());
 ```
 
+Methods        | Action
+---------------------- | ------
+`getAll`                | Get all light's connected to the current bridge.
+`get`                | Get specific light by id.
+`setState`                | Set state of single light by id.
+
 Related
 ----------------
 - Get the most out of your lights. - [HUE Developer Program](https://www.developers.meethue.com/)
-- Feign makes writing java http clients easier. - [OpenFeign](https://github.com/OpenFeign/feign)
+- Feign makes writing java http clients more easy. - [OpenFeign](https://github.com/OpenFeign/feign)
 
 License
 ----------------
